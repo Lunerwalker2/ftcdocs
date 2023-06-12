@@ -17,7 +17,7 @@ to see why.
    informational purposes only; while this documentation is intended to support 
    teams and in some way provide context to game rules, the game rules supercede 
    all documentation found here. If you have feedback about this project, 
-   please use our :doc:`feedback form <form/form>`.
+   please use our :doc:`feedback form <ftc_docs/form/form>`.
 
 .. toctree::
    :hidden:
@@ -25,7 +25,6 @@ to see why.
 
    /overview/ftcoverview
    gracious_professionalism/gp
-   Site Feedback Form<form/form>
 
 .. toctree::
    :caption: Getting Started
@@ -92,6 +91,17 @@ to see why.
 
    Team Complimentary Software<sponsors/software/software>
    Team Discounts<sponsors/discounts/discounts>
+
+.. toctree::
+   :caption: FTC Docs
+   :maxdepth: 1
+   :hidden:
+
+   Site Feedback Form<ftc_docs/form/form>
+   FTC Docs PDF<ftc_docs/pdf/pdf>
+   Dark Mode<ftc_docs/dark/dark>
+
+.. Add Contrib Section here when added
 
 .. rst-class:: center
    
@@ -185,7 +195,7 @@ to see why.
                :outline:
                :expand:
 
-               OnBot-Java
+               OnBot Java
          
          .. div:: col-sm pl-1 pr-1
  
@@ -269,7 +279,7 @@ to see why.
                :outline:
                :expand:
 
-               Hardware Config
+               Hardware Configuration
 
    .. grid-item-card:: 
       :class-header: sd-bg-secondary font-weight-bold sd-text-white
@@ -285,6 +295,16 @@ to see why.
       +++
  
       .. div:: container-fluid p-0
+
+         .. div:: col-sm pl-1 pr-1
+
+            .. button-ref:: ftc_sdk/overview/index
+               :ref-type: doc
+               :color: black
+               :outline:
+               :expand:
+
+               About the SDK
 
          .. div:: col-sm pl-1 pr-1
       
@@ -313,16 +333,6 @@ to see why.
                :expand:
 
                Javadoc Documentation
-
-         .. div:: col-sm pl-1 pr-1
-
-            .. button-ref:: ftc_sdk/overview/index
-               :ref-type: doc
-               :color: black
-               :outline:
-               :expand:
-
-               About the SDK
 
    .. grid-item-card:: 
       :class-header: sd-bg-secondary font-weight-bold sd-text-white
