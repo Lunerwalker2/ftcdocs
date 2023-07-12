@@ -13,18 +13,19 @@ replacing the existing Hub’s IMU chip `BNO055
 from Bosch Sensortec. An IMU can measure many aspects of device motion; this
 explanatory document focuses primarily on **rotation**.
 
-The new `Software SDK
+The `Software SDK
 <https://github.com/FIRST-Tech-Challenge/FtcRobotController/releases>`__
-**version 8.1** provides a **universal interface** that supports both the
+**version 8.1** introduced a **universal interface** that supports both the
 BHI260AP and BNO055 IMU. This basic tutorial introduces some new features: 
 
 -  robot configuration allows selection of IMU type 
 -  universal classes and methods supporting both IMU types 
 -  three ways to specify Hub mounting orientation on the robot
 
-Teams using the new Control Hub IMU must use the new SDK 8.1.  Updating to SDK
-8.1 is **optional** for POWERPLAY, if you are not planning to use the new
-Control Hub IMU.
+Teams wanting to use the newer IMU are required to:
+
+- use SDK 8.1 or newer
+- update the Control Hub OS to 1.1.3 or newer.  
 
 However **all teams** are encouraged to begin using the universal IMU classes
 and methods for **new** Blocks and Java code. And, migrating **existing code**
@@ -193,7 +194,7 @@ pointing along the positive axis, the fingers curl in the direction of
    lower right corner of the Hub.*
 
 This tutorial will **not** discuss the *FIRST* Tech Challenge `Field Coordinate System
-<https://github.com/FIRST-Tech-Challenge/FtcRobotController/blob/master/FtcRobotController/src/main/java/org/firstinspires/ftc/robotcontroller/external/samples/FTC_FieldCoordinateSystemDefinition.pdf>`__.
+<https://ftc-docs.firstinspires.org/en/latest/game_specific_resources/field_coordinate_system/field-coordinate-system.html>`__.
 Your OpModes might relate robot orientation to the overall field or `‘global
 coordinates’
 <https://github.com/FIRST-Tech-Challenge/FtcRobotController/wiki/Vuforia-for-Blocks#vuforia-introduction>`__
@@ -1093,7 +1094,7 @@ If ``resetYaw()`` does not meet your needs, other code-based choices
 Sample OpModes
 --------------
 
-The SDK 8.1 contains Sample OpModes demonstrating the above. 
+SDK 8.1 and newer contains Sample OpModes demonstrating the above. 
 
 .. tab-set::
 
@@ -1180,10 +1181,8 @@ features:
 -  three ways to specify Hub mounting orientation on the robot
 -  new Blocks and Java methods to read data from both IMU types
 
-Teams using the new Control Hub IMU must use the new SDK 8.1.
-
-Updating to SDK 8.1 is **optional** for POWERPLAY, if you are not
-planning to use the new Control Hub IMU.
+Teams using the new Control Hub IMU must use at least SDK 8.1 AND
+must update to at least Control Hub OS 1.1.3.
 
 However **all teams** are encouraged to begin using the universal IMU
 classes and methods for **new** Blocks and Java code, and consider

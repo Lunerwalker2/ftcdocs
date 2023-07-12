@@ -154,6 +154,9 @@ def setup(app):
     #app.add_css_file("css/ftc-rtl.css")
     app.add_js_file("js/external-links-new-tab.js")
 
+# Set Cookie Banner to disabled by default
+cookiebanner_enabled = False
+
 # Configure for local official-esque builds
 if(os.environ.get("LOCAL_DOCS_BUILD") == "true"):
     html_context = dict()
@@ -182,3 +185,7 @@ if(os.environ.get("RTD_DOCS_BUILD") == "true"):
 html_theme_options = {
     'navigation_depth': 5,
 }
+
+# Add support for translations
+gettext_compact = False
+locale_dirs = ["locale/"]
